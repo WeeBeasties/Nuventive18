@@ -13,7 +13,7 @@ output:
     reveal_options:
       navigation: false
       progress: false
-      slideNumber: true
+      slideNumber: false
       controls: false
     css: styles.css
 ---
@@ -23,168 +23,149 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 ## About Ferris State
 <div id="left">
-* West Central Michigan
-* Medium Masters University
-* 14,600 students
-* Recently Revised General Education
-* Used Improve Since 2008
+* West central Michigan
+* Medium Masters university
+* 13,800 students
+* Used TracDat/Improve since 2008
+* Locally hosted, so no Analytics
 
 </div>
 <div id="right">
 <section class = "plain">
-![](images/clockbelltower.jpg) 
+![](images/Ferris.jpg) 
 </section>
 
-## The Killer P's of Assessment
+## The Killer P's
 <section class = "plain">
-![](images/killer_p.png) 
+![killer Ps](images/killer_p.png) 
 </section>
 
-## General Education Goals
-* Track and improve program effectiveness
+## Philosophy of Assessment
+1. Begin with your questions
+1. Only assess things that you are willing to change
+1. Make it reproducible
+	* **Measure** _reliably_
+	* **Analyze** _transparently_
+	* **Report** _publicly_
+	* **Discuss** _objectively_
+	* **Respond** _intentionally_
+
+## Assessment Goals
 * **Assumptions:**
+
 	1. The program consists of courses
 	1. Student preformance in course work is the most valid measure
 	1. General Education applies to all students
+
 * **Therefore, we are measuring student performance across all courses in the program**
 
 ## Project Scope
-* In a semester...
+* Each semester we offer...
 
->* Over 300 different course codes
->* Touching over 5,000 students
->* Involving over 300 faculty
->* Generating over 50,000 SCH
+	* About 300 different course codes that...
+	* Are taken by over 5,000 students and are...
+	* Taught by over 300 faculty and...
+	* Generate over 50,000 SCH and...
+	* $20,000,000 in revenue
 
-## Project Resources
->* Program coordinator (me, 50% release)
->* General Education Committee (advisory)
->* Budget ($0)
->* Staff (none)
->* TracDat
-
-## The Assessment Cycle
+## Distributed Assessment
 <section class = "plain">
-![](images/oldCycle.png)
+![chaos](images/chaos.jpg)
 </section>
 
-## The Futile Cycle
-<section class = "plain">
-![](images/hamster.gif)
-</section>
-
-## A Better Model
-<blockquote>"Assessment is not a spreadsheet -- it is a conversation"<br />Irmeli Halinen</blockquote>
-<section class = "plain">
-![](images/GREEK_KEY.png)
-</section>
-
-## Sustainable assessment
+## Implementation Drivers
 * The three keys to our program assessment strategy:
 
->- **Simplify** — reduce complexity  
->- **Standardize** — reduce variance
->- **Automate** — reduce workload
+* **Simplify** — reduce complexity  
 
->- Aiming for reproducible processes to increase transparency and encourage engagement
+* **Standardize** — reduce variance
 
-## Simplify: Core Competencies  
-* Eight competencies: 
+* **Automate** — reduce workload
 
->* Collaboration, Communication, Culture, Diversity, Natural Sciences, Problem Solving, Quantitative Literacy, Self and Society
->* Overseen by a faculty subcommittees
->* Operational definitions and relevance statements
->* Entered into TracDat as Assessment Units
+## Core Competencies  
+Simplify to eight student competencies:
 
-## Simplify: Ferris Learning Outcomes
->* Each competency has four learning outcomes
->* Based upon what we want our graduating seniors to look like
->* One outcome measured each semester
->* Rolling two-year program cycle
->* Outcomes are mapped to other strategic activities in TracDat
+<div id="left">
+* Collaboration
+* Communication
+* Culture
+* Diversity
+</div>
+<div id="right">
+* Natural Sciences
+* Problem Solving
+* Quantitative Literacy
+* Self and Society
+</div>
 
-## Standardize: Measures
-* Created in order to get more uniform reporting into TracDat
+## Improve Implementation
+* Each competency is a Reporting Unit
+* Each competency has four FLOs
+* One outcome measured each semester
+* Rolling two-year program cycle
 
->* 14 different measures are defined
->* Each measure has its own:
->* Scoring system (zero to four point scale)
->* Analysis interpretation (four threshold values)
->* Criterion leveling (expectations by course level)
->* Each measure is present for all FLOs
+## Standard Measures
+* 14 different measures are defined
+* Each measure has its own:
+	* Scoring system (zero to four point scale)
+	* Analysis interpretation (four threshold values)
+	* Criterion leveling (expectations by course level)
 
-## Standardize: Registering Courses
-* I need to know who is doing what each semester
+https://ferris.edu/HTMLS/academics/general-education/evidence/measures.htm
 
->* Who is collecting data?
->* What competency is being measured?
->* What outcome is being measured?
->* What measure is being used?
->* All tracked using a Google form
 
-## Standarize: Data Collection
-* This is the biggest step forward for us
+## Course Registration
 
->* Excel workbooks to collect and summarize student results
->* SCORE, PREPOST, NORM, RUBRIC
->* Common metadata supplied by instructors
->* Enter student names, IDs, and appropriate evaluations
->* A standaridized summary is automatically generated
+* Who is collecting data?
+* What competency is being measured?
+* What measure is being used?
+* All tracked using a Google form
 
-## Standardize: TracDat Assignments
-* Seeking to minimize the need for faculty to log into TracDat
+http://bit.ly/2LDDeKx
 
->* Received as an email
->* Copy and paste summary
->* Select a few responses from drop-down menus
->* Add a short reflection
->* Attach the workbook and submit
+## Tracking Registrations
 
-## Automate: TracDat Overview
-* Allow quick synopsis of the program data
+* Need up-to-the-minute status
+* Live report generated with R
+* Google API access to current data
+* Permanent reports generated
 
->* Dashboard view gives status (i.e. number of results)
->* Several ad hoc reports are useful:
->* Assignment completion summary
->* Data overview
->* Results and reflections
+http://www.reproducibleassessment.com/1702/
 
-## Automate: Analysis of Student Data
-* All workbooks are stored in the TracDat document repository
+## Creating Assignments
 
->* Each semester's data is in a separate folder
->* Download all the workbooks
->* An R script is used to process the workbooks
->* All data is aggregated into one csv file
->* Identifiable information is removed
+* All assignments are created by me
+* Faculty are _easily_ frustrated
+	* Need uniformity
+	* Yet, need flexibility
+* TextExpander
 
-## Automate: Reporting
+https://www.cliftonfranklund.com/textexpander.html
 
->* Using RMarkdown
->* Reuseable code
->* PDF reports for printing
->* HTML reports for distribution and collaboration
+## Assignment Benefits
 
-## Promoting Assessment
-* True assessment requires faculty to evaluate and use the results!
-* Need to provide opportunities for interaction
+* No log-in required
+* Received as an email
+* Simple to complete
+* Attach a data form and submit
 
->* Presentations in meetings
->* Moderated discussion boards
->* Comments in Open Science Framework
->* GitHub pull requests
+## Tracking Assignments
 
-## Assessment in Action
-* [Report](https://weebeasties.github.io/1601_SCI1/report-1601.pdf)
-* [Discussion](https://weebeasties.github.io/1601_SCI1/)
-* [OSF](https://doi.org/10.17605/OSF.IO/35GSR)
-* [GitHub](http://github.com/weebeasties/1601_SCI1)
+* Administrators want to know the status
+* _Ad hoc_ reports for rapid overviews  
 
-## Faculty Training
+	* Assignments
+	* Summary results
+	* Aggregate reports
 
->* Frequent workshops of offered
->* One-on-one training sessions
->* Online instructional videos
+## Semi-Annual Reporting
+
+* Using RMarkdown
+* Reuseable code
+* PDF reports for printing
+* HTML reports for distribution and collaboration
+
+
 
 ## Questions?
 
