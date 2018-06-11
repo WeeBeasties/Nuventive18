@@ -173,7 +173,8 @@ https://www.cliftonfranklund.com/textexpander.html
 
 * All of these resources are linked to from your handout
 * Licensed using either CC-BY 4.0 or MIT
-* Feel free to contact me if you have questions or comments
+
+http://reproducibleassessment.com/Nuventive18/handout.pdf
 
 <section class = "plain">
 ![](images/businessCard.jpg) 
