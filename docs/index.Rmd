@@ -84,7 +84,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 
 ## Core Competencies  
 Simplify to eight student competencies:
-
+<br /><br />
 <div id="left">
 * Collaboration
 * Communication
@@ -97,6 +97,8 @@ Simplify to eight student competencies:
 * Quantitative Literacy
 * Self and Society
 </div>
+
+[https://ferris.edu/HTMLS/academics/general-education/competencies/](https://ferris.edu/HTMLS/academics/general-education/competencies/)
 
 ## Improve Implementation
 * Each competency is a Reporting Unit
